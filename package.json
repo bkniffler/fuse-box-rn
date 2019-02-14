@@ -1,0 +1,21 @@
+{
+  "name": "fuse-box-rn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node fuse"
+  },
+  "dependencies": {
+    "@types/node": "^11.9.3",
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.1",
+    "fuse-box": "3.7.0-next.17",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-native-elements": "^1.0.0",
+    "react-native-web": "^0.10.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3"
+  }
+}
