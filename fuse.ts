@@ -18,9 +18,8 @@ Sparky.task('default', () => {
     // log: isProduction,
     // cache: !isProduction,
     sourceMaps: !isProduction,
-    plugins: [WebIndexPlugin({ template: 'src/index.html' })]
     // useTypescriptCompiler: true
-    // useJsNext: true
+    useJsNext: true
   });
 
   // start the hot reload server
