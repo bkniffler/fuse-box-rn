@@ -1,4 +1,4 @@
-import { FuseBox, Sparky, WebIndexPlugin } from 'fuse-box';
+import { FuseBox, Sparky, WebIndexPlugin, Babel7Plugin } from 'fuse-box';
 import { resolve } from 'path';
 
 const DEV_PORT = 4455;
@@ -36,6 +36,14 @@ Sparky.task('default', () => {
     .plugin(
       WebIndexPlugin({
         template: 'src/index.html'
+      })
+    )
+    .plugin(
+      Babel7Plugin({
+        limit2project: false,
+        config: {
+          presets: ['module:metro-react-native-babel-preset']
+        }
       })
     );
 
